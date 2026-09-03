@@ -302,11 +302,11 @@ public class ejercicio_5_NIVEL_MEDIO {
 #### Ejercicio 6
 * **Asteriscos:**
   > Escribir un programa que muestre esto por pantalla:
-*****
-****
-***
-**
-*
+//*****
+//****
+//***
+//**
+//*
 * **Explicación del código:**
   El programa imprime en consola un triángulo invertido formado por asteriscos (`*`), comenzando con 5 asteriscos en la primera fila y reduciendo la cantidad en una unidad por cada fila descendente.
   
