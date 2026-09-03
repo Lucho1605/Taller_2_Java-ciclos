@@ -31,30 +31,32 @@ decimales, si es que se da el caso.]
   * *Nota adicional:* Se mantuvo la fórmula indicada en la guía ($2 \cdot \pi \cdot r$), respetando la instrucción original a pesar de que la fórmula matemática estándar del área es $\pi \cdot r^2$.].
 
 * **Código fuente:**
-  ```java
-  // package Actividad_2;
+ El código desarrollado para el ejercicio es el siguiente:
 
+  <details>
+<summary><b>Ver código fuente</b></summary>
+
+```java
 import java.util.Scanner;
 
 /**
- *
  * @author LUIS ALEJANDRO ACUÑA
  */
 public class ejercicio_1_NIVEL_INICIAL {
     public static void main(String[] args) {
-         Scanner sc = new Scanner(System.in); 
-         double pi,ra,are;
-         pi=3.14;
-         System.out.println("Sistema para calcular el area de un circulo...");
-         System.out.println("porfavor digite el radio de la circunferencia: ");
-         ra=sc.nextDouble();
-         are=2*pi*ra;
-         System.out.println("el area de el circulo, deacuerdo a el radio introducido es: "+are);
+        Scanner sc = new Scanner(System.in); 
+        double pi, ra, are;
+        pi = 3.14;
+        
+        System.out.println("Sistema para calcular el area de un circulo...");
+        System.out.println("porfavor digite el radio de la circunferencia: ");
+        ra = sc.nextDouble();
+        
+        are = 2 * pi * ra;
+        System.out.println("el area de el circulo, deacuerdo a el radio introducido es: " + are);
     }
-// el enunciado comete un error cuando dice que para calcular el area de un circulo es 2*PI*radio, la manera correcta es PI*ra al cuadrado
-    //sin embargo, dejé la solución del codigo, respecto a lo que dice exactamente el enunciado
 }
-
+```
 #### Ejercicio 2
 * **Buenos dias, buenas tardes, buenas noches:**
   > [Realiza un programa que pida una hora por teclado y que muestre luego buenos días, buenas tardes o
@@ -69,35 +71,48 @@ respectivamente. Sólo se tienen en cuenta las horas, los minutos no se deben in
   * **Estructura de control:** Se implementó una **estructura condicional** (`if - else if`), evaluando rangos de horas para definir el saludo adecuado sin requerir estructuras de ciclos (`for`, `while` o `do-while`).].
 
 * **Código fuente:**
-  ```java
-  // package Actividad_2;
+ El código desarrollado para el ejercicio es el siguiente:
 
-import java.util.Scanner;
+    public class ejercicio_2_NIVEL_INICIAL {
 
-/**
- *
- * @author LUIS ALEJANDRO ACUÑA
- */
-public class ejercicio_2_NIVEL_INICIAL {
-    public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-        int hor; 
-        System.out.println("que horas son? ");
-        hor = sc.nextInt();
-        if (hor>5 && hor<13){
-            System.out.println("buenos dias!!");
+        /**
+         * Luis Alejandro Acuña Aldana
+         * 20261244210
+         */
+        public static void main(String[] args) {
+
+            int cant, prec, subt;
+            double des = 0, tot;
+
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("Ingrese la cantidad de productos a comprar: ");
+            cant = sc.nextInt();
+
+            System.out.println("Ingrese el valor de unidad del producto: ");
+            prec = (int) sc.nextLong();
+
+            subt = (int) (cant * prec);
+
+            System.out.println("El valor a pagar sin descuento: " + subt);
+
+            if (subt < 100000) {
+                des = subt * 0;
+            }
+            else if (subt > 100000 && subt < 300000) {
+                des = subt * 0.1;
+            }
+            else if (subt > 300000 && subt < 500000) {
+                des = subt * 0.15;
+            }
+            if (subt > 500000) {
+                des = subt * 0.2;
+
+            tot = subt - des;
+
+            System.out.println("El total de su compra es de: " + tot);
+        }
     }
-        else if (hor>12 && hor<21){
-            System.out.println("buenas tardes!!");
-}
-        else if (hor>20){
-            System.out.println("buenas noches!!");
-    }
-        else if (hor<6){
-            System.out.println("buenas noches!!");
-}
-}
-}
 ---
 
 ### Nivel Medio
@@ -120,40 +135,47 @@ public class ejercicio_2_NIVEL_INICIAL {
   * **Estructura de control:** Se implementó un **ciclo `for`** para repetir 5 veces la lectura de datos, junto con **estructuras condicionales** (`if`) dentro y fuera del ciclo para detectar la primera y última iteración, evaluar si los valores son iguales y realizar el cálculo correspondiente.].
 
 * **Código fuente:**
-  ```java
-  // package Actividad_2;
+El código desarrollado para el ejercicio es el siguiente:
 
-import java.util.Scanner;
+    public class Ejercicio_1 {
 
-/**
- *
- * @author LUIS ALEJANDRO ACUÑA
- */
-    public class ejercicio_3_NIVEL_MEDIO {
+        /**
+         * Luis Alejandro Acuña Aldana
+         * 20261244210
+         */
         public static void main(String[] args) {
-            Scanner sc=new Scanner(System.in); 
-            double pri=0;
-            double ult=0;
-            System.out.println("por favor introduce 5 numeros: ");
-             for (int cic  = 1; cic <= 5; cic++) {
-                System.out.print("Número " + cic + ": ");
-                double act = sc.nextDouble();
 
-             if (cic == 1){
-                 pri=act;
+            int cant, prec, subt;
+            double des = 0, tot;
+
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("Ingrese la cantidad de productos a comprar: ");
+            cant = sc.nextInt();
+
+            System.out.println("Ingrese el valor de unidad del producto: ");
+            prec = (int) sc.nextLong();
+
+            subt = (int) (cant * prec);
+
+            System.out.println("El valor a pagar sin descuento: " + subt);
+
+            if (subt < 100000) {
+                des = subt * 0;
+            }
+            else if (subt > 100000 && subt < 300000) {
+                des = subt * 0.1;
+            }
+            else if (subt > 300000 && subt < 500000) {
+                des = subt * 0.15;
+            }
+            if (subt > 500000) {
+                des = subt * 0.2;
+
+            tot = subt - des;
+
+            System.out.println("El total de su compra es de: " + tot);
         }
-             if  (cic==5) {
-                 ult=act;
-    }
-    }
-             if (pri==ult){
-             System.out.println("el primer numero que digitó y el ultimo son iguales...");
-             double media;
-             media=(pri+ult)/2;
-             System.out.println("la media de entre el primer y ultimo numero es: "+media);
-        }
-    }
-        
     }
   
 #### Ejercicio 4
@@ -171,28 +193,48 @@ calcule la potencia. Ejemplo, si se indica 3 y 4, nos da 81 de solución (3 elev
   * **Estructura de control:** Se utilizó una **estructura secuencial** directa que delega el cálculo matemático al método `Math.pow(bas, exp)` de Java, sin requerir ciclos (`for`, `while` o `do-while`).].
 
 * **Código fuente:**
-  ```java
-  // package Actividad_2;
+El código desarrollado para el ejercicio es el siguiente:
 
-import java.util.Scanner;
+    public class Ejercicio_1 {
 
-/**
- *
- * @author LUIS ALEJANDRO ACUÑA
- */
-public class ejercicio_4_NIVEL_MEDIO {
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in); 
-        double bas,exp; 
-        System.out.println("digite la base: ");
-        bas=sc.nextInt();
-        System.out.println("digite el exponente: ");
-        exp=sc.nextInt();
-        double sol; 
-        sol=Math.pow(bas, exp);
-        System.out.println("el resultado es: "+sol);
+        /**
+         * Luis Alejandro Acuña Aldana
+         * 20261244210
+         */
+        public static void main(String[] args) {
+
+            int cant, prec, subt;
+            double des = 0, tot;
+
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("Ingrese la cantidad de productos a comprar: ");
+            cant = sc.nextInt();
+
+            System.out.println("Ingrese el valor de unidad del producto: ");
+            prec = (int) sc.nextLong();
+
+            subt = (int) (cant * prec);
+
+            System.out.println("El valor a pagar sin descuento: " + subt);
+
+            if (subt < 100000) {
+                des = subt * 0;
+            }
+            else if (subt > 100000 && subt < 300000) {
+                des = subt * 0.1;
+            }
+            else if (subt > 300000 && subt < 500000) {
+                des = subt * 0.15;
+            }
+            if (subt > 500000) {
+                des = subt * 0.2;
+
+            tot = subt - des;
+
+            System.out.println("El total de su compra es de: " + tot);
+        }
     }
-}
 
   
 #### Ejercicio 5
@@ -211,71 +253,48 @@ proceso anterior]
   * **Estructura de control:** Se implementó un **ciclo `do-while`** para garantizar que el programa se ejecute al menos una vez y continúe repitiéndose mientras el usuario responda con la letra 's'. Dentro del ciclo se emplean **estructuras condicionales** (`if` y `else if`) para validar e imprimir el mes o indicar un número inválido.].
 
 * **Código fuente:**
-  ```java
-  // package Actividad_2;
+El código desarrollado para el ejercicio es el siguiente:
 
-import java.util.Scanner;
+    public class Ejercicio_1 {
 
-/**
- *
- * @author LUIS ALEJANDRO ACUÑA
- */
-public class ejercicio_5_NIVEL_MEDIO {
-    public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in); 
-        int num;
-        char res;
-        do{
-        System.out.println("digita un numero para saber el mes: ");
-        num=sc.nextInt();
-        if (num==1){
-            System.out.println("es el mes de Enero!!");
+        /**
+         * Luis Alejandro Acuña Aldana
+         * 20261244210
+         */
+        public static void main(String[] args) {
+
+            int cant, prec, subt;
+            double des = 0, tot;
+
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("Ingrese la cantidad de productos a comprar: ");
+            cant = sc.nextInt();
+
+            System.out.println("Ingrese el valor de unidad del producto: ");
+            prec = (int) sc.nextLong();
+
+            subt = (int) (cant * prec);
+
+            System.out.println("El valor a pagar sin descuento: " + subt);
+
+            if (subt < 100000) {
+                des = subt * 0;
+            }
+            else if (subt > 100000 && subt < 300000) {
+                des = subt * 0.1;
+            }
+            else if (subt > 300000 && subt < 500000) {
+                des = subt * 0.15;
+            }
+            if (subt > 500000) {
+                des = subt * 0.2;
+
+            tot = subt - des;
+
+            System.out.println("El total de su compra es de: " + tot);
         }
-        if (num==2){
-            System.out.println("es el mes de Febrero!!");
     }
-        if (num==3){
-            System.out.println("es el mes de Marzo!!");
-}
-        if (num==4){
-            System.out.println("es el mes de Abril!!");
-        }
-        if (num==5){
-            System.out.println("es el mes de Mayo!!");
-        }
-        if (num==6){
-            System.out.println("es el mes de Junio!!");
-        }
-        if (num==7){
-            System.out.println("es el mes de Julio!!");
-        }
-        if (num==8){
-            System.out.println("es el mes de Agosto!!");
-        }
-        if (num==9){
-            System.out.println("es el mes de Septiembre!!");
-        }
-        if (num==10){
-            System.out.println("es el mes de Octubre!!");
-        }
-        if (num==11){
-            System.out.println("es el mes de Noviembre!!");
-        }
-        if (num==12){
-            System.out.println("es el mes de Diciembre!!");
-        }
-        else if (num>12){
-            System.out.println("numero invalido");
-    }
-            System.out.println("quieres volver a intentarlo? (si o no) ");
-        res = sc.next().toLowerCase().charAt(0);
-            System.out.println();
-            
-        } while (res == 's');
-
-        System.out.println("Programa finalizado. ¡Hasta luego!");
-}
-}
 
 
   
@@ -300,24 +319,48 @@ public class ejercicio_5_NIVEL_MEDIO {
   * **Estructura de control:** Se implementaron **ciclos `for` anidados**. El ciclo externo controla la cantidad de filas impresas, mientras que el ciclo interno determina cuántos asteriscos se imprimen horizontalmente antes de realizar un salto de línea (`System.out.println()`).].
 
 * **Código fuente:**
-  ```java
-  // package Actividad_2;
+El código desarrollado para el ejercicio es el siguiente:
 
-/**
- *
- * @author LUIS ALEJANDRO ACUÑA
- */
-public class ejercicio_6_NIVEL_AVANZADO {
-    public static void main(String[] args) {
-        int fil, ast;
-        for ( fil = 5; fil >= 1; fil--) {
-            for ( ast = 1; ast <= fil; ast++) {
-                System.out.print("*"); 
+    public class Ejercicio_1 {
+
+        /**
+         * Luis Alejandro Acuña Aldana
+         * 20261244210
+         */
+        public static void main(String[] args) {
+
+            int cant, prec, subt;
+            double des = 0, tot;
+
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("Ingrese la cantidad de productos a comprar: ");
+            cant = sc.nextInt();
+
+            System.out.println("Ingrese el valor de unidad del producto: ");
+            prec = (int) sc.nextLong();
+
+            subt = (int) (cant * prec);
+
+            System.out.println("El valor a pagar sin descuento: " + subt);
+
+            if (subt < 100000) {
+                des = subt * 0;
             }
-            System.out.println();
+            else if (subt > 100000 && subt < 300000) {
+                des = subt * 0.1;
+            }
+            else if (subt > 300000 && subt < 500000) {
+                des = subt * 0.15;
+            }
+            if (subt > 500000) {
+                des = subt * 0.2;
+
+            tot = subt - des;
+
+            System.out.println("El total de su compra es de: " + tot);
         }
     }
-}
     
 
   
@@ -338,27 +381,48 @@ public class ejercicio_6_NIVEL_AVANZADO {
   * **Estructura de control:** Se implementaron **ciclos `for` anidados**. El ciclo principal controla el avance de las filas, mientras que dentro de él se ejecutan dos ciclos secuenciales: el primero imprime los números en orden ascendente (de `1` a `fil`) y el segundo los imprime en orden descendente (de `fil - 1` a `1`).].
 
 * **Código fuente:**
-  ```java
-  // package Actividad_2;
+El código desarrollado para el ejercicio es el siguiente:
 
-/**
- *
- * @author LUIS ALEJANDRO ACUÑA
- */
-public class ejercicio_7_NIVEL_AVANZADO {
-    public static void main(String[] args) {
-        int tot = 4,fil,j; 
-        for ( fil = 1; fil <= tot; fil++) {
-            for ( j = 1; j <= fil; j++) {
-                System.out.print(j);
+    public class Ejercicio_1 {
+
+        /**
+         * Luis Alejandro Acuña Aldana
+         * 20261244210
+         */
+        public static void main(String[] args) {
+
+            int cant, prec, subt;
+            double des = 0, tot;
+
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("Ingrese la cantidad de productos a comprar: ");
+            cant = sc.nextInt();
+
+            System.out.println("Ingrese el valor de unidad del producto: ");
+            prec = (int) sc.nextLong();
+
+            subt = (int) (cant * prec);
+
+            System.out.println("El valor a pagar sin descuento: " + subt);
+
+            if (subt < 100000) {
+                des = subt * 0;
             }
-            for ( j = fil - 1; j >= 1; j--) {
-                System.out.print(j);
+            else if (subt > 100000 && subt < 300000) {
+                des = subt * 0.1;
             }
-            System.out.println();
+            else if (subt > 300000 && subt < 500000) {
+                des = subt * 0.15;
+            }
+            if (subt > 500000) {
+                des = subt * 0.2;
+
+            tot = subt - des;
+
+            System.out.println("El total de su compra es de: " + tot);
         }
     }
-}
 
 
   
