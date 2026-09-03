@@ -73,46 +73,37 @@ respectivamente. Sólo se tienen en cuenta las horas, los minutos no se deben in
 * **Código fuente:**
  El código desarrollado para el ejercicio es el siguiente:
 
-    public class ejercicio_2_NIVEL_INICIAL {
+    <details>
+<summary><b>Ver código fuente</b></summary>
 
-        /**
-         * Luis Alejandro Acuña Aldana
-         * 20261244210
-         */
-        public static void main(String[] args) {
+```java
+import java.util.Scanner;
 
-            int cant, prec, subt;
-            double des = 0, tot;
-
-            Scanner sc = new Scanner(System.in);
-
-            System.out.println("Ingrese la cantidad de productos a comprar: ");
-            cant = sc.nextInt();
-
-            System.out.println("Ingrese el valor de unidad del producto: ");
-            prec = (int) sc.nextLong();
-
-            subt = (int) (cant * prec);
-
-            System.out.println("El valor a pagar sin descuento: " + subt);
-
-            if (subt < 100000) {
-                des = subt * 0;
-            }
-            else if (subt > 100000 && subt < 300000) {
-                des = subt * 0.1;
-            }
-            else if (subt > 300000 && subt < 500000) {
-                des = subt * 0.15;
-            }
-            if (subt > 500000) {
-                des = subt * 0.2;
-
-            tot = subt - des;
-
-            System.out.println("El total de su compra es de: " + tot);
-        }
+/**
+ *
+ * @author LUIS ALEJANDRO ACUÑA
+ */
+public class ejercicio_2_NIVEL_INICIAL {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int hor; 
+        System.out.println("que horas son? ");
+        hor = sc.nextInt();
+        if (hor>5 && hor<13){
+            System.out.println("buenos dias!!");
     }
+        else if (hor>12 && hor<21){
+            System.out.println("buenas tardes!!");
+}
+        else if (hor>20){
+            System.out.println("buenas noches!!");
+    }
+        else if (hor<6){
+            System.out.println("buenas noches!!");
+}
+}
+}
+```
 ---
 
 ### Nivel Medio
@@ -137,46 +128,43 @@ respectivamente. Sólo se tienen en cuenta las horas, los minutos no se deben in
 * **Código fuente:**
 El código desarrollado para el ejercicio es el siguiente:
 
-    public class Ejercicio_1 {
+   <details>
+<summary><b>Ver código fuente</b></summary>
 
-        /**
-         * Luis Alejandro Acuña Aldana
-         * 20261244210
-         */
+```java
+import java.util.Scanner;
+
+/**
+ *
+ * @author LUIS ALEJANDRO ACUÑA
+ */
+    public class ejercicio_3_NIVEL_MEDIO {
         public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in); 
+            double pri=0;
+            double ult=0;
+            System.out.println("por favor introduce 5 numeros: ");
+             for (int cic  = 1; cic <= 5; cic++) {
+                System.out.print("Número " + cic + ": ");
+                double act = sc.nextDouble();
 
-            int cant, prec, subt;
-            double des = 0, tot;
-
-            Scanner sc = new Scanner(System.in);
-
-            System.out.println("Ingrese la cantidad de productos a comprar: ");
-            cant = sc.nextInt();
-
-            System.out.println("Ingrese el valor de unidad del producto: ");
-            prec = (int) sc.nextLong();
-
-            subt = (int) (cant * prec);
-
-            System.out.println("El valor a pagar sin descuento: " + subt);
-
-            if (subt < 100000) {
-                des = subt * 0;
-            }
-            else if (subt > 100000 && subt < 300000) {
-                des = subt * 0.1;
-            }
-            else if (subt > 300000 && subt < 500000) {
-                des = subt * 0.15;
-            }
-            if (subt > 500000) {
-                des = subt * 0.2;
-
-            tot = subt - des;
-
-            System.out.println("El total de su compra es de: " + tot);
+             if (cic == 1){
+                 pri=act;
+        }
+             if  (cic==5) {
+                 ult=act;
+    }
+    }
+             if (pri==ult){
+             System.out.println("el primer numero que digitó y el ultimo son iguales...");
+             double media;
+             media=(pri+ult)/2;
+             System.out.println("la media de entre el primer y ultimo numero es: "+media);
         }
     }
+        
+    }
+```
   
 #### Ejercicio 4
 * **Potencias:**
@@ -195,47 +183,30 @@ calcule la potencia. Ejemplo, si se indica 3 y 4, nos da 81 de solución (3 elev
 * **Código fuente:**
 El código desarrollado para el ejercicio es el siguiente:
 
-    public class Ejercicio_1 {
+    <details>
+<summary><b>Ver código fuente</b></summary>
 
-        /**
-         * Luis Alejandro Acuña Aldana
-         * 20261244210
-         */
-        public static void main(String[] args) {
+```java
+import java.util.Scanner;
 
-            int cant, prec, subt;
-            double des = 0, tot;
-
-            Scanner sc = new Scanner(System.in);
-
-            System.out.println("Ingrese la cantidad de productos a comprar: ");
-            cant = sc.nextInt();
-
-            System.out.println("Ingrese el valor de unidad del producto: ");
-            prec = (int) sc.nextLong();
-
-            subt = (int) (cant * prec);
-
-            System.out.println("El valor a pagar sin descuento: " + subt);
-
-            if (subt < 100000) {
-                des = subt * 0;
-            }
-            else if (subt > 100000 && subt < 300000) {
-                des = subt * 0.1;
-            }
-            else if (subt > 300000 && subt < 500000) {
-                des = subt * 0.15;
-            }
-            if (subt > 500000) {
-                des = subt * 0.2;
-
-            tot = subt - des;
-
-            System.out.println("El total de su compra es de: " + tot);
-        }
+/**
+ *
+ * @author LUIS ALEJANDRO ACUÑA
+ */
+public class ejercicio_4_NIVEL_MEDIO {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in); 
+        double bas,exp; 
+        System.out.println("digite la base: ");
+        bas=sc.nextInt();
+        System.out.println("digite el exponente: ");
+        exp=sc.nextInt();
+        double sol; 
+        sol=Math.pow(bas, exp);
+        System.out.println("el resultado es: "+sol);
     }
-
+}
+```
   
 #### Ejercicio 5
 * **Meses del año:**
@@ -255,47 +226,73 @@ proceso anterior]
 * **Código fuente:**
 El código desarrollado para el ejercicio es el siguiente:
 
-    public class Ejercicio_1 {
+    <details>
+<summary><b>Ver código fuente</b></summary>
 
-        /**
-         * Luis Alejandro Acuña Aldana
-         * 20261244210
-         */
-        public static void main(String[] args) {
+```java
+import java.util.Scanner;
 
-            int cant, prec, subt;
-            double des = 0, tot;
-
-            Scanner sc = new Scanner(System.in);
-
-            System.out.println("Ingrese la cantidad de productos a comprar: ");
-            cant = sc.nextInt();
-
-            System.out.println("Ingrese el valor de unidad del producto: ");
-            prec = (int) sc.nextLong();
-
-            subt = (int) (cant * prec);
-
-            System.out.println("El valor a pagar sin descuento: " + subt);
-
-            if (subt < 100000) {
-                des = subt * 0;
-            }
-            else if (subt > 100000 && subt < 300000) {
-                des = subt * 0.1;
-            }
-            else if (subt > 300000 && subt < 500000) {
-                des = subt * 0.15;
-            }
-            if (subt > 500000) {
-                des = subt * 0.2;
-
-            tot = subt - des;
-
-            System.out.println("El total de su compra es de: " + tot);
+/**
+ *
+ * @author LUIS ALEJANDRO ACUÑA
+ */
+public class ejercicio_5_NIVEL_MEDIO {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in); 
+        int num;
+        char res;
+        do{
+        System.out.println("digita un numero para saber el mes: ");
+        num=sc.nextInt();
+        if (num==1){
+            System.out.println("es el mes de Enero!!");
         }
+        if (num==2){
+            System.out.println("es el mes de Febrero!!");
     }
+        if (num==3){
+            System.out.println("es el mes de Marzo!!");
+}
+        if (num==4){
+            System.out.println("es el mes de Abril!!");
+        }
+        if (num==5){
+            System.out.println("es el mes de Mayo!!");
+        }
+        if (num==6){
+            System.out.println("es el mes de Junio!!");
+        }
+        if (num==7){
+            System.out.println("es el mes de Julio!!");
+        }
+        if (num==8){
+            System.out.println("es el mes de Agosto!!");
+        }
+        if (num==9){
+            System.out.println("es el mes de Septiembre!!");
+        }
+        if (num==10){
+            System.out.println("es el mes de Octubre!!");
+        }
+        if (num==11){
+            System.out.println("es el mes de Noviembre!!");
+        }
+        if (num==12){
+            System.out.println("es el mes de Diciembre!!");
+        }
+        else if (num>12){
+            System.out.println("numero invalido");
+    }
+            System.out.println("quieres volver a intentarlo? (si o no) ");
+        res = sc.next().toLowerCase().charAt(0);
+            System.out.println();
+            
+        } while (res == 's');
 
+        System.out.println("Programa finalizado. ¡Hasta luego!");
+}
+}
+```
 
   
 ---
@@ -321,46 +318,27 @@ El código desarrollado para el ejercicio es el siguiente:
 * **Código fuente:**
 El código desarrollado para el ejercicio es el siguiente:
 
-    public class Ejercicio_1 {
+   <details>
+<summary><b>Ver código fuente</b></summary>
 
-        /**
-         * Luis Alejandro Acuña Aldana
-         * 20261244210
-         */
-        public static void main(String[] args) {
-
-            int cant, prec, subt;
-            double des = 0, tot;
-
-            Scanner sc = new Scanner(System.in);
-
-            System.out.println("Ingrese la cantidad de productos a comprar: ");
-            cant = sc.nextInt();
-
-            System.out.println("Ingrese el valor de unidad del producto: ");
-            prec = (int) sc.nextLong();
-
-            subt = (int) (cant * prec);
-
-            System.out.println("El valor a pagar sin descuento: " + subt);
-
-            if (subt < 100000) {
-                des = subt * 0;
+```java
+**
+ *
+ * @author LUIS ALEJANDRO ACUÑA
+ */
+public class ejercicio_6_NIVEL_AVANZADO {
+    public static void main(String[] args) {
+        int fil, ast;
+        for ( fil = 5; fil >= 1; fil--) {
+            for ( ast = 1; ast <= fil; ast++) {
+                System.out.print("*"); 
             }
-            else if (subt > 100000 && subt < 300000) {
-                des = subt * 0.1;
-            }
-            else if (subt > 300000 && subt < 500000) {
-                des = subt * 0.15;
-            }
-            if (subt > 500000) {
-                des = subt * 0.2;
-
-            tot = subt - des;
-
-            System.out.println("El total de su compra es de: " + tot);
+            System.out.println();
         }
     }
+}
+    
+```
     
 
   
@@ -383,49 +361,30 @@ El código desarrollado para el ejercicio es el siguiente:
 * **Código fuente:**
 El código desarrollado para el ejercicio es el siguiente:
 
-    public class Ejercicio_1 {
+   <details>
+<summary><b>Ver código fuente</b></summary>
 
-        /**
-         * Luis Alejandro Acuña Aldana
-         * 20261244210
-         */
-        public static void main(String[] args) {
-
-            int cant, prec, subt;
-            double des = 0, tot;
-
-            Scanner sc = new Scanner(System.in);
-
-            System.out.println("Ingrese la cantidad de productos a comprar: ");
-            cant = sc.nextInt();
-
-            System.out.println("Ingrese el valor de unidad del producto: ");
-            prec = (int) sc.nextLong();
-
-            subt = (int) (cant * prec);
-
-            System.out.println("El valor a pagar sin descuento: " + subt);
-
-            if (subt < 100000) {
-                des = subt * 0;
+```java
+/**
+ *
+ * @author LUIS ALEJANDRO ACUÑA
+ */
+public class ejercicio_7_NIVEL_AVANZADO {
+    public static void main(String[] args) {
+        int tot = 4,fil,j; 
+        for ( fil = 1; fil <= tot; fil++) {
+            for ( j = 1; j <= fil; j++) {
+                System.out.print(j);
             }
-            else if (subt > 100000 && subt < 300000) {
-                des = subt * 0.1;
+            for ( j = fil - 1; j >= 1; j--) {
+                System.out.print(j);
             }
-            else if (subt > 300000 && subt < 500000) {
-                des = subt * 0.15;
-            }
-            if (subt > 500000) {
-                des = subt * 0.2;
-
-            tot = subt - des;
-
-            System.out.println("El total de su compra es de: " + tot);
+            System.out.println();
         }
     }
+}
+```
 
-
-  
 ---
 
 ## 3. Evidencias
