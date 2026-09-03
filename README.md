@@ -16,11 +16,11 @@ En este taller se implementaron programas en Java utilizando estructuras de cont
 
 #### Ejercicio 1
 * **Area de una circunferencia:**
-  > [Solicitar por teclado el radio de un círculo, guardarlo en un double, y calcular el área del círculo (el
+  > Solicitar por teclado el radio de un círculo, guardarlo en un double, y calcular el área del círculo (el
 area de un circulo es 2*PI*radio). Escribir luego el área por consola. Comprobar que sale con
-decimales, si es que se da el caso.]
+decimales, si es que se da el caso.
 * **Explicación del código:**
-  [El programa solicita al usuario el radio de una circunferencia para calcular y mostrar el área en consola mediante una estructura secuencial directa.
+  El programa solicita al usuario el radio de una circunferencia para calcular y mostrar el área en consola mediante una estructura secuencial directa.
   
   * **Variables utilizadas:**
     * `sc` (`Scanner`): Objeto para capturar la entrada de datos por teclado.
@@ -28,7 +28,7 @@ decimales, si es que se da el caso.]
     * `ra` (`double`): Almacena el valor del radio ingresado por el usuario.
     * `are` (`double`): Almacena el resultado del cálculo del área.
   * **Estructura de control:** Se implementó una **estructura secuencial** (no requiere ciclos `for`, `while` o `do-while`), ejecutando la fórmula indicada en el enunciado de manera directa.
-  * *Nota adicional:* Se mantuvo la fórmula indicada en la guía ($2 \cdot \pi \cdot r$), respetando la instrucción original a pesar de que la fórmula matemática estándar del área es $\pi \cdot r^2$.].
+  * *Nota adicional:* Se mantuvo la fórmula indicada en la guía ($2 \cdot \pi \cdot r$), respetando la instrucción original a pesar de que la fórmula matemática estándar del área es $\pi \cdot r^2$.
 
 * **Código fuente:**
  El código desarrollado para el ejercicio es el siguiente:
@@ -59,16 +59,16 @@ public class ejercicio_1_NIVEL_INICIAL {
 ```
 #### Ejercicio 2
 * **Buenos dias, buenas tardes, buenas noches:**
-  > [Realiza un programa que pida una hora por teclado y que muestre luego buenos días, buenas tardes o
+  > Realiza un programa que pida una hora por teclado y que muestre luego buenos días, buenas tardes o
 buenas noches según la hora. Se utilizarán los tramos de 6 a 12, de 13 a 20 y de 21 a 5.
-respectivamente. Sólo se tienen en cuenta las horas, los minutos no se deben introducir por teclado.]
+respectivamente. Sólo se tienen en cuenta las horas, los minutos no se deben introducir por teclado.
 * **Explicación del código:**
-  [El programa solicita al usuario la hora actual (en formato de 24 horas) para determinar y mostrar el saludo correspondiente ("buenos días", "buenas tardes" o "buenas noches") mediante condicionales anidados.
+  El programa solicita al usuario la hora actual (en formato de 24 horas) para determinar y mostrar el saludo correspondiente ("buenos días", "buenas tardes" o "buenas noches") mediante condicionales anidados.
   
   * **Variables utilizadas:**
     * `sc` (`Scanner`): Objeto para capturar la entrada de datos por teclado.
     * `hor` (`int`): Variable entera que almacena la hora ingresada por el usuario.
-  * **Estructura de control:** Se implementó una **estructura condicional** (`if - else if`), evaluando rangos de horas para definir el saludo adecuado sin requerir estructuras de ciclos (`for`, `while` o `do-while`).].
+  * **Estructura de control:** Se implementó una **estructura condicional** (`if - else if`), evaluando rangos de horas para definir el saludo adecuado sin requerir estructuras de ciclos (`for`, `while` o `do-while`).
 
 * **Código fuente:**
  El código desarrollado para el ejercicio es el siguiente:
@@ -110,11 +110,11 @@ public class ejercicio_2_NIVEL_INICIAL {
 
 #### Ejercicio 3
 * **Media:**
-  > [ Programa que pide por teclado 5 números, y en el caso en el que el primero introducido sea igual al
+  >  Programa que pide por teclado 5 números, y en el caso en el que el primero introducido sea igual al
 último, nos muestra la media de ambos. En caso contrario, no se mostrará nada.
-]
+
 * **Explicación del código:**
-  [El programa solicita al usuario que ingrese 5 números uno a uno. Guarda el primer y el último número ingresado para compararlos y, en caso de ser iguales, calcula y muestra la media entre ambos.
+  El programa solicita al usuario que ingrese 5 números uno a uno. Guarda el primer y el último número ingresado para compararlos y, en caso de ser iguales, calcula y muestra la media entre ambos.
 
   * **Variables utilizadas:**
     * `sc` (`Scanner`): Objeto para capturar la entrada de números por teclado.
@@ -123,7 +123,7 @@ public class ejercicio_2_NIVEL_INICIAL {
     * `act` (`double`): Variable temporal que captura el número ingresado en cada iteración.
     * `cic` (`int`): Variable de control del ciclo que actúa como contador de iteraciones.
     * `media` (`double`): Almacena el resultado del promedio entre el primer y último número.
-  * **Estructura de control:** Se implementó un **ciclo `for`** para repetir 5 veces la lectura de datos, junto con **estructuras condicionales** (`if`) dentro y fuera del ciclo para detectar la primera y última iteración, evaluar si los valores son iguales y realizar el cálculo correspondiente.].
+  * **Estructura de control:** Se implementó un **ciclo `for`** para repetir 5 veces la lectura de datos, junto con **estructuras condicionales** (`if`) dentro y fuera del ciclo para detectar la primera y última iteración, evaluar si los valores son iguales y realizar el cálculo correspondiente.
 
 * **Código fuente:**
 El código desarrollado para el ejercicio es el siguiente:
@@ -168,17 +168,17 @@ import java.util.Scanner;
   
 #### Ejercicio 4
 * **Potencias:**
-  > [Escribir un programa que pida una base y un exponente (ambos números son enteros positivos) y que
-calcule la potencia. Ejemplo, si se indica 3 y 4, nos da 81 de solución (3 elevado a 4, es 3*3*3*3).]
+  > Escribir un programa que pida una base y un exponente (ambos números son enteros positivos) y que
+calcule la potencia. Ejemplo, si se indica 3 y 4, nos da 81 de solución (3 elevado a 4, es 3*3*3*3).
 * **Explicación del código:**
-  [El programa solicita al usuario el valor de una base y un exponente para calcular la potencia matemática correspondiente utilizando la librería estándar de Java.
+  El programa solicita al usuario el valor de una base y un exponente para calcular la potencia matemática correspondiente utilizando la librería estándar de Java.
   
   * **Variables utilizadas:**
     * `sc` (`Scanner`): Objeto para capturar la entrada de datos por teclado.
     * `bas` (`double`): Almacena la base ingresada por el usuario.
     * `exp` (`double`): Almacena el exponente ingresado por el usuario.
     * `sol` (`double`): Almacena el resultado de elevar la base al exponente.
-  * **Estructura de control:** Se utilizó una **estructura secuencial** directa que delega el cálculo matemático al método `Math.pow(bas, exp)` de Java, sin requerir ciclos (`for`, `while` o `do-while`).].
+  * **Estructura de control:** Se utilizó una **estructura secuencial** directa que delega el cálculo matemático al método `Math.pow(bas, exp)` de Java, sin requerir ciclos (`for`, `while` o `do-while`).
 
 * **Código fuente:**
 El código desarrollado para el ejercicio es el siguiente:
@@ -210,18 +210,18 @@ public class ejercicio_4_NIVEL_MEDIO {
   
 #### Ejercicio 5
 * **Meses del año:**
-  > [Hacer un programa que pide un número al usuario, y escribe en pantalla el mes correspondiente a tal
+  > Hacer un programa que pide un número al usuario, y escribe en pantalla el mes correspondiente a tal
 número (si el usuario introduce 2, el programa escribe “Febrero”). Si el numero no es válido, lo indica
 igualmente. Tras ello, se le pregunta al usuario si quiere repetir, y si dice “si”, se vuelve a repetir el
-proceso anterior]
+proceso anterior
 * **Explicación del código:**
-  [El programa solicita un número del 1 al 12 para mostrar el mes correspondiente del año. Incluye la opción de repetir la consulta tantas veces como el usuario lo desee mediante un menú interactivo.
+  El programa solicita un número del 1 al 12 para mostrar el mes correspondiente del año. Incluye la opción de repetir la consulta tantas veces como el usuario lo desee mediante un menú interactivo.
   
   * **Variables utilizadas:**
     * `sc` (`Scanner`): Objeto para capturar la entrada de datos por teclado.
     * `num` (`int`): Almacena el número de mes ingresado por el usuario.
     * `res` (`char`): Almacena el primer carácter de la respuesta del usuario (`'s'` para continuar o cualquier otro para salir).
-  * **Estructura de control:** Se implementó un **ciclo `do-while`** para garantizar que el programa se ejecute al menos una vez y continúe repitiéndose mientras el usuario responda con la letra 's'. Dentro del ciclo se emplean **estructuras condicionales** (`if` y `else if`) para validar e imprimir el mes o indicar un número inválido.].
+  * **Estructura de control:** Se implementó un **ciclo `do-while`** para garantizar que el programa se ejecute al menos una vez y continúe repitiéndose mientras el usuario responda con la letra 's'. Dentro del ciclo se emplean **estructuras condicionales** (`if` y `else if`) para validar e imprimir el mes o indicar un número inválido.
 
 * **Código fuente:**
 El código desarrollado para el ejercicio es el siguiente:
@@ -301,19 +301,19 @@ public class ejercicio_5_NIVEL_MEDIO {
 
 #### Ejercicio 6
 * **Asteriscos:**
-  > [Escribir un programa que muestre esto por pantalla:
+  > Escribir un programa que muestre esto por pantalla:
 *****
 ****
 ***
 **
-*]
+*
 * **Explicación del código:**
-  [El programa imprime en consola un triángulo invertido formado por asteriscos (`*`), comenzando con 5 asteriscos en la primera fila y reduciendo la cantidad en una unidad por cada fila descendente.
+  El programa imprime en consola un triángulo invertido formado por asteriscos (`*`), comenzando con 5 asteriscos en la primera fila y reduciendo la cantidad en una unidad por cada fila descendente.
   
   * **Variables utilizadas:**
     * `fil` (`int`): Variable de control para el ciclo externo que gestiona las filas (decrece de 5 a 1).
     * `ast` (`int`): Variable de control para el ciclo interno que controla el número de asteriscos impresos en la fila actual.
-  * **Estructura de control:** Se implementaron **ciclos `for` anidados**. El ciclo externo controla la cantidad de filas impresas, mientras que el ciclo interno determina cuántos asteriscos se imprimen horizontalmente antes de realizar un salto de línea (`System.out.println()`).].
+  * **Estructura de control:** Se implementaron **ciclos `for` anidados**. El ciclo externo controla la cantidad de filas impresas, mientras que el ciclo interno determina cuántos asteriscos se imprimen horizontalmente antes de realizar un salto de línea (`System.out.println()`).
 
 * **Código fuente:**
 El código desarrollado para el ejercicio es el siguiente:
@@ -344,19 +344,19 @@ public class ejercicio_6_NIVEL_AVANZADO {
   
 #### Ejercicio 7
 * **Enunciado:**
-  > [Escribir un programa que muestre esto por pantalla:
+  > Escribir un programa que muestre esto por pantalla:
 1
 121
 12321
-1234321]
+1234321
 * **Explicación del código:**
-  [El programa imprime una pirámide numéricas simétrica de 4 filas. En cada fila genera una secuencia incremental de números desde 1 hasta el número de la fila actual, seguida de una secuencia decreciente hasta volver al número 1.
+  El programa imprime una pirámide numéricas simétrica de 4 filas. En cada fila genera una secuencia incremental de números desde 1 hasta el número de la fila actual, seguida de una secuencia decreciente hasta volver al número 1.
   
   * **Variables utilizadas:**
     * `tot` (`int`): Define la cantidad total de filas que tendrá la figura (4 en este caso).
     * `fil` (`int`): Variable de control del ciclo externo que indica el número de fila actual.
     * `j` (`int`): Variable de control reutilizada en los ciclos internos para imprimir los valores numéricos.
-  * **Estructura de control:** Se implementaron **ciclos `for` anidados**. El ciclo principal controla el avance de las filas, mientras que dentro de él se ejecutan dos ciclos secuenciales: el primero imprime los números en orden ascendente (de `1` a `fil`) y el segundo los imprime en orden descendente (de `fil - 1` a `1`).].
+  * **Estructura de control:** Se implementaron **ciclos `for` anidados**. El ciclo principal controla el avance de las filas, mientras que dentro de él se ejecutan dos ciclos secuenciales: el primero imprime los números en orden ascendente (de `1` a `fil`) y el segundo los imprime en orden descendente (de `fil - 1` a `1`).
 
 * **Código fuente:**
 El código desarrollado para el ejercicio es el siguiente:
@@ -393,27 +393,34 @@ Capturas de pantalla de la ejecución y prueba de cada programa en la consola o 
 
 ### Nivel Inicial
 * **Ejercicio 1:**
-  "C:\Users\LUIS ALEJANDRO ACUÑA\Pictures\Screenshots\Captura de pantalla 2026-09-03 122525.png"
+  <img width="1917" height="1020" alt="Captura de pantalla 2026-09-03 122525" src="https://github.com/user-attachments/assets/18587009-5281-45de-9bbb-ce5008b94061" />
+
 
 * **Ejercicio 2:**
-  "C:\Users\LUIS ALEJANDRO ACUÑA\Pictures\Screenshots\Captura de pantalla 2026-09-03 122900.png"
+  <img width="1917" height="1018" alt="Captura de pantalla 2026-09-03 122900" src="https://github.com/user-attachments/assets/709c01dc-54ea-42ae-b24b-c9d73e8b55b1" />
+
 
 ### Nivel Medio
 * **Ejercicio 3:**
-  "C:\Users\LUIS ALEJANDRO ACUÑA\Pictures\Screenshots\Captura de pantalla 2026-09-03 123114.png"
+  <img width="1917" height="1016" alt="Captura de pantalla 2026-09-03 123114" src="https://github.com/user-attachments/assets/6bbda844-8497-4ca5-b6c8-127ef714a51d" />
+
 
 * **Ejercicio 4:**
-  "C:\Users\LUIS ALEJANDRO ACUÑA\Pictures\Screenshots\Captura de pantalla 2026-09-03 123152.png"
+  <img width="1917" height="1011" alt="Captura de pantalla 2026-09-03 123152" src="https://github.com/user-attachments/assets/b56a8e25-6a87-4349-ad6b-fa385f617c3c" />
+
 
 * **Ejercicio 5:**
-  "C:\Users\LUIS ALEJANDRO ACUÑA\Pictures\Screenshots\Captura de pantalla 2026-09-03 123232.png"
+  <img width="1917" height="1017" alt="Captura de pantalla 2026-09-03 123232" src="https://github.com/user-attachments/assets/05ba5bfd-11a0-4fd6-8ae9-a350e8320b97" />
+
 
 ### Nivel Avanzado
 * **Ejercicio 6:**
-  "C:\Users\LUIS ALEJANDRO ACUÑA\Pictures\Screenshots\Captura de pantalla 2026-09-03 123256.png"
+  <img width="1917" height="1018" alt="Captura de pantalla 2026-09-03 123256" src="https://github.com/user-attachments/assets/27f0b981-6c9b-4f9a-948a-0f4a12e8ce56" />
+
 
 * **Ejercicio 7:**
-  "C:\Users\LUIS ALEJANDRO ACUÑA\Pictures\Screenshots\Captura de pantalla 2026-09-03 123340.png"
+  <img width="1917" height="1017" alt="Captura de pantalla 2026-09-03 123340" src="https://github.com/user-attachments/assets/1622d237-3efd-4aae-9c4a-5e77e36244ae" />
+
 
 ---
 
